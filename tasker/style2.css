@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.blue {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(205, 244, 255);
+    width: 1000px;
+    height: 583.5px;
+    margin-left: 270.5px;
+}
+
+.icon img {
+    height: 100px;
+    width: 100px;
+    margin-left: -200px;
+    margin-top: 50px;
+}
+
+.white {
+    display: flex;
+    flex-direction: column;
+    margin-left: -250px;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.white ul {
+    list-style: none;
+    padding: 0;
+}
+
+.white li.w {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.white li.w img {
+    height: 20px;
+    width: 20px;
+}
+
+.white li.w p {
+    margin: 0;
+}
+
+.white li.w select {
+    outline: 0;
+    border: 0;
+    width: 95px;
+}
+
+.white li.w:active {
+    background-color: rgb(181, 176, 176);
+    color: rgb(205, 244, 255);
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+}
+
+.head {
+    margin-top: -330px;
+    margin-left: 400px;
+    color: rgb(71, 69, 69);
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+.task b {
+    color: rgb(88, 88, 88);
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+.one, .two, .three {
+    background-color: white;
+    height: 100px;
+    width: 900px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(105, 104, 104, 0.7);
+}
+
+.one input, .two input, .three input {
+    width: 25px;
+    height: 25px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+.one h3, .two h3, .three h3 {
+    color: rgb(105, 104, 104);
+    margin-top: -80px;
+    margin-left: 120px;
+}
+
+.bar {
+    width: 5px;
+    height: 102px;
+    background-color: rgb(205, 244, 255);
+    margin-left: 90px;
+    margin-top: -65px;
+}
+
+.red {
+    background-color: rgb(252, 132, 132);
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    margin-left: 120px;
+    transform: translateY(10px);
+}
+
+.red p {
+    color: rgb(186, 185, 185);
+    margin-left: 20px;
+    transform: translateY(-2px);
+}
+
+.del img {
+    width: 20px;
+    height: 20px;
+}
+
+.edit {
+    margin-left: 750px;
+    transform: translateY(-30px);
+}
+
+.de {
+    margin-left: 800px;
+    transform: translateY(-55px);
+}
+
+.bu {
+    margin-left: 700px;
+    transform: translateY(-10px);
+}
+
+.bu button {
+    background-color: rgb(164, 229, 247);
+    border-radius: 10px;
+    width: 80px;
+    border: 1px solid rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+.bu button:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.rak {
+    border: gray;
+    background-color: rgb(188, 222, 232);
+    height: 50px;
+    width: 900px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(105, 104, 104, 0.7);
+}
+
+.rak span {
+    margin-left: 20px;
+}
+
+.task-item {
+    background-color: white;
+    height: 100px;
+    width: 900px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(105, 104, 104, 0.7);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.task-item.completed h3 {
+    text-decoration: line-through;
+}
+
+.task-item input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 30px;
+}
+
+.task-item .bar {
+    width: 5px;
+    height: 100%;
+    background-color: rgb(205, 244, 255);
+    margin: 0 30px;
+}
+
+.task-item h3 {
+    color: rgb(105, 104, 104);
+    flex-grow: 1;
+    margin: 0;
+}
+
+.task-item .red {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transform: translateX(-785px);
+    margin-top: 55px;
+}
+
+.task-item .red p {
+    color: rgb(186, 185, 185);
+}
+
+.task-item .del {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    gap:10px;
+    margin-top: 100px;
+}
+.task-item .edit {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    gap:10px;
+    margin-top: -25px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

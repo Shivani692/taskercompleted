@@ -1,0 +1,73 @@
+
+.grey {
+    background-color: rgb(205, 244, 255);
+    width: 700px;
+    height: 585.5px;
+    margin: -10px 0 0 -10px;
+}
+
+.grey img {
+    width: 550px;
+    height: 500px;
+    margin: 40px 0 0 50px;
+}
+
+.reg {
+    margin-left: 800px;
+    margin-top: -520px;
+}
+
+.reg p {
+    color: gray;
+}
+
+.reg input {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.reg input::placeholder {
+    transform: translateY(5px);
+}
+
+.checkbox label input {
+    margin-left: -145px;
+}
+
+.checkbox label h5 {
+    margin-left: 25px;
+    margin-top: -25px;
+    color: gray;
+}
+
+button {
+    background-color: rgb(139, 230, 255);
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.up {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.up a {
+    text-decoration: none;
+}
+
+.up b {
+    margin-left: 5px;
+    color: rgb(139, 230, 255);
+}

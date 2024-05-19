@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker - Home</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="file.png" type="image/x-icon">
+</head>
+<body>
+<div class="blue">
+    <div class="icon">
+        <img src="file.png" alt="icon">
+    </div>
+    <div class="white">
+        <ul>
+            <li class="w" onclick="highlight(this)">
+                <img src="C:\Users\DELL\Desktop\html\java sricvpt\tasker\[removal.ai]_a9b8e779-3310-43bf-9f1e-e605ecc3848a-png-transparent-computer-icons-task-management-virtual-assistant-symbol-symbol-miscellaneous-text-service.png" alt="task">
+                <p>Tasks</p>
+            </li>
+            <li class="w" onclick="highlight(this)">
+                <img src="C:\Users\DELL\Desktop\html\java sricvpt\tasker\Removal-989.png" alt="category">
+                <p>
+                    <select id="categoryDropdown" onchange="filterTasksByCategory()">
+                        <option value="all">All</option>
+                        <option value="home">Home</option>
+                        <option value="school">School</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="none">None</option>
+                        <option value="add">Add Categories</option>
+                    </select>
+                </p>
+            </li>
+            <li class="w" onclick="highlight(this)">
+                <img src="C:\Users\DELL\Desktop\html\java sricvpt\tasker\[removal.ai]_70cc1387-466c-4e83-af3a-f91515ea7ba9-png-transparent-computer-icons-service-technology-setting-miscellaneous-service-business-thumbnail.png" alt="settings">
+                <p>Settings</p>
+            </li>
+        </ul>
+    </div>
+    <div class="head">
+        <p>All your tasks</p>
+    </div>
+    <p class="task"><b>Tasks</b></p>
+    <div class="bu">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('done')">Done</button>
+        <button onclick="filterTasks('notdone')">Not done</button>
+    </div>
+    <button class="rak" onclick="showAddTaskModal()">[<b> + </b>]<span>Add a Task</span> </button>
+    <div class="fl" id="taskList">
+    </div>
+</div>
+<div id="addTaskModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeAddTaskModal()">&times;</span>
+        <h2>Add New Task</h2>
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName" placeholder="Enter task name">
+        <label for="taskCategory">Category:</label>
+        <select id="taskCategory">
+            <option value="home">Home</option>
+            <option value="school">School</option>
+            <option value="shopping">Shopping</option>
+            <option value="none">None</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+</div>
+<div id="editTaskModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeEditTaskModal()">&times;</span>
+        <h2>Edit Task</h2>
+        <label for="editTaskName">Task Name:</label>
+        <input type="text" id="editTaskName">
+        <label for="editTaskCategory">Category:</label>
+        <select id="editTaskCategory">
+            <option value="home">Home</option>
+            <option value="school">School</option>
+            <option value="shopping">Shopping</option>
+            <option value="none">None</option>
+        </select>
+        <button onclick="saveTask()">Save</button>
+    </div>
+</div>
+
+<script src="t.js"></script>
+</body>
+</html>

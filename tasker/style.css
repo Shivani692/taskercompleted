@@ -1,0 +1,92 @@
+.grey{
+    background-color: rgb(205, 244, 255);
+    width: 700px;
+    height: 585.5px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+   img{
+    width: 550px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 50px;
+   }
+}
+.reg{
+    margin-left: 800px;
+    margin-top: -500px;
+    p{
+        color: gray;
+    }
+    input{
+        margin-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+       
+        
+    }
+   
+    ::placeholder{
+        transform: translateY(5px);
+        
+    }
+.checkbox{
+    label{
+        input{
+            margin-left: -145px;
+        }
+        h5{
+        margin-left: 25px;
+        margin-top: -25px;
+        color:gray ;
+    }
+    }
+}
+button{
+    background-color:rgb(139, 230, 255) ;
+    outline: 0px;
+    border: 0px;
+    
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 10px;
+    height: 40px;
+   transform: translateY(-20px);
+   color: white;
+   text-align: center;
+   
+}
+.up{
+    margin-top: -10px;
+    margin-left: 10px;
+    a{
+        text-decoration: none;
+    }
+b{
+    margin-left: 5px;
+    color:rgb(139, 230, 255) ;
+}
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
